@@ -8,7 +8,11 @@ for status in statuses:
     params = {
         'status': status,
     }
-    res = requests.get(url, headers = headers, params = params)
+    res = requests.get(url, headers=headers, params=params)
     print('--------------------')
-    print(res.text)
+    print(res.json())
     print(res.status_code)
+
+
+
+

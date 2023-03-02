@@ -1,24 +1,22 @@
 import requests
 import json
-from config import base_url, statuses, headers
+from config import base_url, statuses, headers, id
 
 pet_put_api = '/pet'
 url = base_url + pet_put_api
 
-put_data =	{
-  "id": 0,
+put_data ={
+  "id": id,
   "category": {
-    "id": 0,
-    "name": "string"
+    "id": 1,
+    "name": "cats"
   },
-  "name": "doggie",
-  "photoUrls": [
-    "string"
-  ],
+  "name": "kittens123",
+  "photoUrls": [],
   "tags": [
     {
-      "id": 0,
-      "name": "string"
+      "id": 1,
+      "name": "белая"
     }
   ],
   "status": statuses[0],

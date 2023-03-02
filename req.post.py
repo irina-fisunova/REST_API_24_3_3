@@ -1,13 +1,13 @@
 import requests
 import json
-from config import base_url, statuses, headers
+from config import base_url, statuses, headers, id
 
 
 pet_post_api = '/pet'
 url = base_url + pet_post_api
 
 post_data = {
-    'id': 1,
+    'id': id,
     'category': {
         'id': 1,
         'name': 'cats'
@@ -20,7 +20,7 @@ post_data = {
             'name': 'черная',
         },
         {
-            'id': 2,
+            'id': 1,
             'name': 'пушистая',
         }
     ],

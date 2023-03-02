@@ -24,7 +24,7 @@ post_data = {
             'name': 'пушистая',
         }
     ],
-    'status': statuses[1],
+    'status': statuses[0],
 }
 
 res = requests.post(url, headers=headers, data=json.dumps(post_data))

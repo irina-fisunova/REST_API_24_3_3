@@ -26,3 +26,4 @@ put_data =	{
 
 res = requests.put(url, headers=headers, data=json.dumps(put_data))
 print(res.json())
+print(res.status_code)

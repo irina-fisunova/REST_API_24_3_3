@@ -29,3 +29,4 @@ post_data = {
 
 res = requests.post(url, headers=headers, data=json.dumps(post_data))
 print(res.json())
+print(res.status_code)

@@ -11,3 +11,4 @@ for status in statuses:
     res = requests.get(url, headers = headers, params = params)
     print('--------------------')
     print(res.text)
+    print(res.status_code)
